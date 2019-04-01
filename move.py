@@ -2,7 +2,6 @@ import os
 import requests
 
 token = os.environ['LIFX_TOKEN']
-stripeId = os.environ['LIFX_STRIPID']
 
 
 headers = {
@@ -11,7 +10,7 @@ headers = {
 
 
 
-move = { "power_on":"true",  "period": 1 }
+move = { "power_on":"true",  "period": 1 ,    "fast": "false" }
 
-requests.post('https://api.lifx.com/v1/lights/id:'+stripeId+'/effects/move' , data=move, headers=headers)
+requests.post('https://api.lifx.com/v1/lights/all/effects/move' , data=move, headers=headers)
 

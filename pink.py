@@ -11,7 +11,7 @@ headers = {
 
 
 green = { "color": "pink",    "brightness": 1,  "power":"on",  "duration": 0.1,    "fast": "false" }
-move = { "power_on":"true",  "period": 0 }
+move = { "power_on":"true",  "period": 0 ,    "fast": "false" }
 
 requests.put('https://api.lifx.com/v1/lights/all/state' , data=green, headers=headers)
 requests.post('https://api.lifx.com/v1/lights/all/effects/move' , data=move, headers=headers)

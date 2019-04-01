@@ -9,7 +9,7 @@ headers = {
 
 
 
-green = { "color": "green",    "brightness": 1,  "power":"on",  "duration": 0.1,    "fast": "true" }
+green = { "color": "green",    "brightness": 1,  "power":"on",  "duration": 0.1,    "fast": "false" }
 move = { "power_on":"true",  "period": 0 }
 
 requests.put('https://api.lifx.com/v1/lights/all/state' , data=green, headers=headers)

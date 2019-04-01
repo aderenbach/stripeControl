@@ -9,7 +9,7 @@ headers = {
 
 
 
-off = {  "power":"off",  "duration": 1,    "fast": "true" }
+off = {  "power":"off",  "duration": 1,    "fast": "false" }
 
 
 requests.put('https://api.lifx.com/v1/lights/all/state' , data=off, headers=headers)

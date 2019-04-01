@@ -10,7 +10,7 @@ headers = {
 
 
 
-data = { "color": "kelvin:9000", "brightness": 1,  "power_on":"true",  "period": 0.5,   "cycles": 5, "persist": "false" }
+data = { "color": "kelvin:9000", "brightness": 1,  "power_on":"true",  "period": 0.5,   "cycles": 5, "persist": "false" ,    "fast": "false" }
 
 
 requests.post('https://api.lifx.com/v1/lights/all/effects/pulse' , data=data, headers=headers)

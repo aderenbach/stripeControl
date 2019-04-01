@@ -9,9 +9,9 @@ headers = {
 
 
 
-pink = { "color": "pink",    "brightness": 1,  "power":"on",  "duration": 0,    "fast": "true" }
-white = { "color": "kelvin:9000",    "brightness": 0.6,  "power":"on",  "duration": 0,    "fast": "true" }
-move = { "power_on":"true",  "period": 1 }
+pink = { "color": "pink",    "brightness": 1,  "power":"on",  "duration": 0,    "fast": "false" }
+white = { "color": "kelvin:9000",    "brightness": 0.6,  "power":"on",  "duration": 0,    "fast": "false" }
+move = { "power_on":"true",  "period": 1 ,    "fast": "false" }
 
 requests.put('https://api.lifx.com/v1/lights/all/state' , data=pink, headers=headers)
 requests.put('https://api.lifx.com/v1/lights/all|0|2|4|6|8|10|12|14/state' , data=white, headers=headers)
